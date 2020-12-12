@@ -9,7 +9,7 @@ import Img5 from '../assest/sliderImage/img5.svg'
 // import Img6 from '../assest/images/rolar.png'
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-
+import './styles.css'
 
 const useStyles = makeStyles((theme) => ({
   slider: {
@@ -48,8 +48,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fef3ed',
     backgroundImage: `url(${Img1})`,
     position: 'relative',
-    maxWidth: '356px',
-    minWidth: '386px',
+    
+    
     height: '175px',
     borderRadius: '16px',
     backgroundRepeat: 'no-repeat',
@@ -62,8 +62,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fef3ed',
     backgroundImage: `url(${Img2})`,
     position: 'relative',
-    maxWidth: '356px',
-    minWidth: '386px',
+    
+    
     height: '175px',
     borderRadius: '16px',
     backgroundRepeat: 'no-repeat',
@@ -75,8 +75,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fef3ed',
     backgroundImage: `url(${Img3})`,
     position: 'relative',
-    maxWidth: '356px',
-    minWidth: '386px',
+    
+    
     height: '175px',
     borderRadius: '16px',
     backgroundRepeat: 'no-repeat',
@@ -88,8 +88,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fef3ed',
     backgroundImage: `url(${Img4})`,
     position: 'relative',
-    maxWidth: '356px',
-    minWidth: '386px',
+    
+    
     height: '175px',
     borderRadius: '16px',
     backgroundRepeat: 'no-repeat',
@@ -101,8 +101,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fef3ed',
     backgroundImage: `url(${Img5})`,
     position: 'relative',
-    maxWidth: '356px',
-    minWidth: '386px',
+    
+    
     height: '175px',
     borderRadius: '16px',
     backgroundRepeat: 'no-repeat',
@@ -160,7 +160,7 @@ const useStyles = makeStyles((theme) => ({
   },
   ItemSlider:{
     display:'grid'
-  }
+  },
 }));
 
 
@@ -182,8 +182,9 @@ const ImgSlider = () => {
           className={classes.ItemSlider}
           requestToChangeActive={setActiveItemIndex}
           activeItemIndex={activeItemIndex}
-          numberOfCards={4.3}
-          slidesToScroll={1}
+          numberOfCards={4}
+          infiniteLoop={true}
+          slidesToScroll={3}
           gutter={20}
           leftChevron={<button className={classes.leftChevron}>{ <ArrowBackIcon/> }</button>}
           rightChevron={<button className={classes.rightChevron}>{<ArrowForwardIcon/>}</button>}

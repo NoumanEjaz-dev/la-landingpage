@@ -1,5 +1,22 @@
-.sliderimg {
-  width: 30%;
-  height: 300px;
-  /* object-fit: cover; */
+@media(max-width: 680px) {
+  .sc-bxivhb {
+  }
 }
+@media(max-width: 1000px){
+     .sc-bxivhb {
+    width: 30% !important;
+    /* margin-left: -30px; */
+  }
+}
+@media(max-width: 780px){
+     .sc-bxivhb {
+    width: 50% !important;
+  }
+}
+@media(max-width: 600px){
+     .sc-bxivhb {
+    width: 100% !important;
+    margin-left: -30px;
+  }
+}
+

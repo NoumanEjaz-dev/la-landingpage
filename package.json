@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.1",
+    "react-alice-carousel": "^2.1.0",
     "react-dom": "^17.0.1",
+    "react-items-carousel": "^2.8.0",
     "react-scripts": "4.0.1",
+    "react-slick": "^0.27.13",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

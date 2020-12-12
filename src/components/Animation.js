@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     },
     phalash:{
         [theme.breakpoints.down('xs')]: {
-            marginTop:'-68px'
+            marginTop:'-4px'
         },
         animationName: 'tossing',
         WebkitAnimationName: 'tossing',
@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     },
     driller: {
         [theme.breakpoints.down('xs')]: {
-            marginTop: '-68px',
+            marginTop: '12px',
             marginLeft:'35px',
         },
         animationName: 'tossing',

@@ -1,14 +1,21 @@
 import React from 'react'
 import { Button } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
-import location from '../assest/images/location.png';
+// import location from '../assest/images/location.png';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import RoomIcon from '@material-ui/icons/Room';
 
 const useStyles = makeStyles((theme) => ({
     field: {
         [theme.breakpoints.down('lg')]: {
-            width: '100%'
+            width: '70%'
+        },
+        [theme.breakpoints.down('md')]: {
+            width: '80%'
+        },
+        [theme.breakpoints.down('xs')]: {
+            width: '100%',
+            marginLeft:'-11px',
         },
         display: 'flex',
         position: 'relative',
@@ -29,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('xs')]: {
             width: '67%',
-            padding:'23px 0px 23px 20px',
+            padding:'23px 0px 23px 37px',
         },
         display: 'block',
         typecheck: 'text',
@@ -41,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
         margin: '0px',
         width: '30%',
         padding: '23px 0px 23px 20px',
+        paddingLeft:'32px',
     },
     Button: {
 
@@ -62,6 +70,11 @@ const useStyles = makeStyles((theme) => ({
     location:{
         width: '5%', 
         height: '30px'
+    },
+    locationIcon:{
+        position:'relative',
+        left:'28px',
+        top:'19px',
     }
 }));
 const InputField = () => {
@@ -69,7 +82,7 @@ const InputField = () => {
     return (
         <div className={classes.head}>
             <div className={classes.field} id="searchform">
-                {/* <img className={classes.location} style={{}} src={location} alt="location" /> */}
+                <RoomIcon className={classes.locationIcon}/>
                 <input className={classes.input} type="text"  placeholder="Enter your address " />
                 
                 <Button className={classes.Button} type="button" > 

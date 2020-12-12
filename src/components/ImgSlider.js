@@ -184,7 +184,7 @@ const ImgSlider = () => {
           activeItemIndex={activeItemIndex}
           numberOfCards={4}
           infiniteLoop={true}
-          slidesToScroll={3}
+          slidesToScroll={2}
           gutter={20}
           leftChevron={<button className={classes.leftChevron}>{ <ArrowBackIcon/> }</button>}
           rightChevron={<button className={classes.rightChevron}>{<ArrowForwardIcon/>}</button>}

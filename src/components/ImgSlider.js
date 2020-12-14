@@ -24,14 +24,6 @@ const useStyles = makeStyles((theme) => ({
     
   },
   sliderBox: {
-    // padding: `0 ${chevronWidth}px`,
-    // [theme.breakpoints.down('sm')]: {
-    //   marginLeft:'-616px'
-    // },
-    // [theme.breakpoints.down('xs')]: {
-    //   marginLeft: '-716px'
-    // },
-    // background:'red',
     overflowX:'none ',
   },
   serviceSlider: {
@@ -39,12 +31,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
   Img1: {
-    // [theme.breakpoints.down('md')]: {
-    //  marginLeft:'-100px',
-    // },
-    // [theme.breakpoints.down('sm')]: {
-    //   marginLeft: '-00px',
-    // },
     backgroundColor: '#fef3ed',
     backgroundImage: `url(${Img1})`,
     position: 'relative',
@@ -136,28 +122,62 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       display: 'none',
     },
-    background:'#fff',
-    marginLeft:'80px',
-    padding:'8px 12px 8px 10px',
-    borderRadius:'20px',
-    outline: 'none',
+    // background:'#fff',
+    // marginLeft:'80px',
+    // padding:'8px 12px 8px 10px',
+    // borderRadius:'20px',
+    // outline: 'none',
+    // "&:hover": {
+    //   border: '1px solid black'
+    // },
+
+    position: 'absolute',
+    marginLeft:'10px',
+    borderRadius: '20px',
+    height: '40px',
+    width: '42px',
+    cursor: 'pointer',
+    textIndex: '-9999px',
+    border: 0,
+    outline: 0,
+    background: 'linear-gradient(-90deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.5) 34.81%,hsla(0,0%,100%,.75) 60.77%,hsla(0,0%,100%,.9) 83.43%,#fff)',
     "&:hover": {
-      border: '1px solid black'
-    }
+      background: 'linear-gradient(90deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.5) 34.81%,hsla(0,0%,100%,.75) 60.77%,hsla(0,0%,100%,.9) 83.43%,#fff)',
+      border: '3px solid #FFEB3B'
+    },
   },
    rightChevron: {
      [theme.breakpoints.down('sm')]: {
        display: 'none',
      },
-    background: '#fff',
-    marginRight: '80px',
-    padding: '8px 12px 8px 10px',
-    borderRadius: '20px',
-    outline:'none',
+    // background: '#fff',
+    // marginRight: '80px',
+    // padding: '8px 12px 8px 10px',
+    // borderRadius: '20px',
+    // outline:'none',
+    position:'absolute',
+    marginRight:'22px',
+    borderRadius:'20px',
+    height:'40px',
+    width:'42px',
+    cursor:'pointer',
+    textIndex:'-9999px',
+    border:0,
+    outline:'0',
+     background:'linear-gradient(-90deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.5) 34.81%,hsla(0,0%,100%,.75) 60.77%,hsla(0,0%,100%,.9) 83.43%,#fff)',
     "&:hover":{
-      border:'1px solid black'
+      background:'linear-gradient(90deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.5) 34.81%,hsla(0,0%,100%,.75) 60.77%,hsla(0,0%,100%,.9) 83.43%,#fff)',
+      border:'3px solid #FFEB3B'
     },
   },
+  arrowStyle:{
+    width:'100%',
+    "&:hover":{
+      color: '#FFEB3B !important',
+    }
+  },
+
+
   ItemSlider:{
     display:'grid'
   },
@@ -182,12 +202,16 @@ const ImgSlider = () => {
           className={classes.ItemSlider}
           requestToChangeActive={setActiveItemIndex}
           activeItemIndex={activeItemIndex}
-          numberOfCards={4}
+          numberOfCards={5}
           infiniteLoop={true}
           slidesToScroll={2}
           gutter={20}
-          leftChevron={<button className={classes.leftChevron}>{ <ArrowBackIcon/> }</button>}
-          rightChevron={<button className={classes.rightChevron}>{<ArrowForwardIcon/>}</button>}
+          leftChevron={<button className={classes.leftChevron}>
+          { <ArrowBackIcon className={classes.arrowStyle} /> }
+          </button>}
+          rightChevron={<button className={classes.rightChevron}>   
+          {<ArrowForwardIcon className={classes.arrowStyle}  />}
+          </button>}
           // outsideChevron
           chevronWidth={chevronWidth}
         >
@@ -267,6 +291,26 @@ const ImgSlider = () => {
                     <span>₽</span>
                     </span>
                     
+                </div>
+            </div>
+             <div className={classes.Img3}>
+                <div className={classes.TextDiv}>
+                    <strong className={classes.title}>
+                        Курьерские услуги
+                    </strong>
+                    <span className={classes.price}>от 500 
+                    <span>₽</span>
+                    </span>                 
+                </div>
+            </div>
+               <div className={classes.Img2}>
+                <div className={classes.TextDiv}>
+                    <strong className={classes.title}>
+                        Курьерские услуги
+                    </strong>
+                    <span className={classes.price}>от 500 
+                    <span>₽</span>
+                    </span>                 
                 </div>
             </div>
         </ItemsCarousel>

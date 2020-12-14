@@ -453,6 +453,78 @@ const BottomSlider = () => {
                                     Posted 2 days ago
                         </div>
                             </div>
+                               <div className={classes.OneflareSlider}>
+                                <h3 className={classes.h3}>
+                                    pet Grooming
+                        </h3>
+                                <div className={classes.cart}>
+                                    <div className={classes.Avatar} kind="circle">
+                                        <img width="30px" alt="img1" src={Img1} className={classes.image} />
+                                    </div>
+                                    <h4 className={classes.h4}>Nomi</h4>
+                                    <div className={classes.heading}>Hampstead Gardens, SA</div>
+                                </div>
+                                <p className={classes.para}>
+                                    To dogs washed and deshedding
+                        </p>
+                                <div className={classes.postDate}>
+                                    Posted 2 days ago
+                        </div>
+                            </div>
+                               <div className={classes.OneflareSlider}>
+                                <h3 className={classes.h3}>
+                                    pet Grooming
+                        </h3>
+                                <div className={classes.cart}>
+                                    <div className={classes.Avatar} kind="circle">
+                                        <img width="30px" alt="img1" src={Img1} className={classes.image} />
+                                    </div>
+                                    <h4 className={classes.h4}>Nomi</h4>
+                                    <div className={classes.heading}>Hampstead Gardens, SA</div>
+                                </div>
+                                <p className={classes.para}>
+                                    To dogs washed and deshedding
+                        </p>
+                                <div className={classes.postDate}>
+                                    Posted 2 days ago
+                        </div>
+                            </div>
+                               <div className={classes.OneflareSlider}>
+                                <h3 className={classes.h3}>
+                                    pet Grooming
+                        </h3>
+                                <div className={classes.cart}>
+                                    <div className={classes.Avatar} kind="circle">
+                                        <img width="30px" alt="img1" src={Img1} className={classes.image} />
+                                    </div>
+                                    <h4 className={classes.h4}>Nomi</h4>
+                                    <div className={classes.heading}>Hampstead Gardens, SA</div>
+                                </div>
+                                <p className={classes.para}>
+                                    To dogs washed and deshedding
+                        </p>
+                                <div className={classes.postDate}>
+                                    Posted 2 days ago
+                        </div>
+                            </div>
+                               <div className={classes.OneflareSlider}>
+                                <h3 className={classes.h3}>
+                                    pet Grooming
+                        </h3>
+                                <div className={classes.cart}>
+                                    <div className={classes.Avatar} kind="circle">
+                                        <img width="30px" alt="img1" src={Img1} className={classes.image} />
+                                    </div>
+                                    <h4 className={classes.h4}>Nomi</h4>
+                                    <div className={classes.heading}>Hampstead Gardens, SA</div>
+                                </div>
+                                <p className={classes.para}>
+                                    To dogs washed and deshedding
+                        </p>
+                                <div className={classes.postDate}>
+                                    Posted 2 days ago
+                        </div>
+                            </div>
                         </>
 
                     </Box>

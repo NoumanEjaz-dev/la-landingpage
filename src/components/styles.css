@@ -1,10 +1,20 @@
+  .sc-bxivhb {
+    width: 25%;
+  }
 @media(max-width: 680px) {
   .sc-bxivhb {
+
   }
 }
 @media(max-width: 1000px){
      .sc-bxivhb {
     width: 30% !important;
+    /* margin-left: -30px; */
+  }
+}
+@media(max-width: 920px){
+     .sc-bxivhb {
+    width: 35% !important;
     /* margin-left: -30px; */
   }
 }

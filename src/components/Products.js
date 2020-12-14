@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
     //   justifyContent:'center'
   },
   gridItem:{
+     "&:hover":{
+          color:'red',
+     },
       [theme.breakpoints.down('xs')]: {
           padding: '0px 0px',
           borderBottom: '1px solid #d1c3c3',
@@ -33,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
           paddingBottom: '20px',
       },
       padding:'20px 20px',
-      fontSize:'15px',
+      fontSize:'18px',
       display:'flex',
       alignItems:'center',
   },
@@ -68,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom:'20px',
         opacity:'0.6',
       },
-  }
+  },
 }));
 
 const Products  = () => {
@@ -85,21 +88,21 @@ const Products  = () => {
         <hr className={classes.hro}></hr>
         <div className={classes.GridContainer}>
             <div className={classes.gridItem}>
-           <span className={classes.icons}><img width="30px" src={icon1} alt="icon1"/></span> Lorem ipsum dolor</div>
+           <span className={classes.icons}><img width="30px" className={classes.Img}  src={icon1} alt="icon1"/></span> Lorem ipsum dolor</div>
             <div className={classes.gridItem}>
-             <span className={classes.icons}><img  width="30px" src={icon2} alt="icon1"/></span>Lorem ipsum dolor sit </div>
+             <span className={classes.icons}><img  width="30px" className={classes.Img} src={icon2} alt="icon1"/></span>Lorem ipsum dolor sit </div>
             <div className={classes.gridItem}>
-             <span className={classes.icons}><img  width="30px" src={icon3} alt="icon1"/></span>n?Lorem ipsum dolor sit </div>
+             <span className={classes.icons}><img  width="30px" className={classes.Img} src={icon3} alt="icon1"/></span>n?Lorem ipsum dolor sit </div>
             <div className={classes.gridItem}>
-             <span className={classes.icons}><img width="30px" src={icon4} alt="icon1"/></span>n?Lorem ipsum dolor si</div>
+             <span className={classes.icons}><img width="30px" className={classes.Img} src={icon4} alt="icon1"/></span>n?Lorem ipsum dolor si</div>
             <div className={classes.gridItem}>
-             <span className={classes.icons}><img width="30px" src={icon5} alt="icon1"/></span>5um dolor consectetur,  </div>
+             <span className={classes.icons}><img width="30px" className={classes.Img} src={icon5} alt="icon1"/></span>5um dolor consectetur,  </div>
             <div className={classes.gridItem}>
-             <span className={classes.icons}><img width="30px" src={icon1} alt="icon1"/></span>6um dolor sit amet </div>
+             <span className={classes.icons}><img width="30px" className={classes.Img} src={icon1} alt="icon1"/></span>6um dolor sit amet </div>
             <div className={classes.gridItem}>
-             <span className={classes.icons}><img width="30px" src={icon2} alt="icon1"/></span>7m dolor sit consectetur,.</div>
+             <span className={classes.icons}><img width="30px" className={classes.Img} src={icon2} alt="icon1"/></span>7m dolor sit consectetur,.</div>
             <div className={classes.gridItem}>
-             <span className={classes.icons}><img width="30px" src={icon3} alt="icon1"/></span>7m dolor sit consectetur,.</div>
+             <span className={classes.icons}><img width="30px" className={classes.Img} src={icon3} alt="icon1"/></span>7m dolor sit consectetur,.</div>
         </div>
         <div className={classes.btn}>
            <Middlebtn/>
